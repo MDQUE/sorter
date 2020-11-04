@@ -1,0 +1,51 @@
+body {
+  margin: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 90px 90px 90px 90px 90px 200px;
+  grid-gap: 5px;
+  background-color: #fff;
+  color: #444;
+}
+
+.flexcontainer {
+  grid-area: 1 / 6 / 5 / 6;
+  grid-gap: 5px;
+  
+}
+
+.schub {
+  width: 100px;
+  background-color: #444;
+  margin-left: 15px;
+  font-size: 70%;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.grid-iteml {
+  width: 35px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+
+}
+
+.grid-itemr {
+  width: 35px;
+  margin-left: 15px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+}
