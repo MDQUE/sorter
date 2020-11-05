@@ -1,35 +1,8 @@
-//Lade 1 Schublade 1
-var Drucker = []
-//Lade 1 schublade 2
-var Raspberry = []
-//Lade 1 Schublade 3
-var Arduino = []
-//Lade 1 Schublade 4
-var Joyit = []
-
-//Lade 2 Schublade 2
-var Roehren = [106976, 107212,110338, 120529, 120537, 120561, 120855, 121045, 121452, 121811, 121940]
-//Lade 5 schublade 2
-var LED = []
-//Lade 5 Schublade 3
-var Hfolie1 = []
-//Lade 5 schublade 4
-var Hfolie2 = []
-//Lade 5 Schublade 5
-var Hfolie3 = []
-//Lade 5 Schublade 6
-var Wiederstand1 = []
-//Lade 5 Schublade 7
-var Wiederstand2 = []
-//Lade 5 Schublade 8
-var Wiederstand3 = []
-//Lade 5 Schublade 9
-var Wiederstand4 = []
-//Lade 5 Schublade 10
-var Wiederstand5 = []
-//Lade 5 Schublade 11
-var Wiederstand6 = []
-
+/*This Code is free to use or modify. If you use it, pls give Credit :)
+		Author: Dominique Martienssen
+		Date: 11.2020
+		@FH Technikum Wien  
+*/
 
 function checktype(){
   var searchtext = document.getElementById("parg").value;
@@ -50,7 +23,6 @@ document.getElementById(elementid).style.backgroundColor = "Red";
 
 
 function evaluate(partnumber) {
-	var Roehren = [106976, 107212,110338, 120529, 120537, 120561, 120855, 121045, 121452, 121811, 121940]
 	
 	if (partnumber >= 106976  & partnumber <= 164844) 
 		{
@@ -61,3 +33,25 @@ function evaluate(partnumber) {
 		}
 	else if (partnumber <= 60) {document.write("2")}
 }
+
+function dataHandler(){
+	ladenArray = []
+}
+
+/*Method dataHandler::saveObjects
+		Saves the contents of "Kiste" Objects to a local DB
+		Function not currently realized
+*/
+dataHandler.Prototype.saveObjects = function(){
+	return;
+}
+
+
+
+
+
+
+
+
+
+

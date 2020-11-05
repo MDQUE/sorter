@@ -1,18 +1,33 @@
+<!--This Code is free to use or modify. If you use it, pls give Credit :)
+		Author: Dominique Martienssen
+		Date: 11.2020
+		@FH Technikum Wien  -->
 <html>
   <head>
 	<title>Box Search v0.2</title>
+	<script src="./datafile.js" type= "text/javascript"> </script>
 	<script src="./scripts.js" type = "text/javascript"> </script>
+	
 	<link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="pagetitle"> Kistensuchmaschine v0.1 </h1>
+    <h1 id="pagetitle"> Kistensuchmaschine v0.2</h1>
     <p>
 	
-    <form class="form"> 
-			<label for="parg">Partnumber:</label><br>
-			<input type="text" id = "parg" name="parg"><br>
-			<input type="button" onclick ="checktype()" value = "Search" >
-		</form>
+    <div class="form" id = "form"> 
+			<label for="parg" class="formchild">Partnumber:</label><br>
+			<input type="text" id = "parg" class="formchild"><br>
+			<script>
+			var parg = document.getElementById('parg');
+			parg.addEventListener("keypress",function(event){
+				if(event.keyCode === 13){
+					event.preventDefault;
+					document.getElementById("searchbutton").click()
+				}
+			});
+			</script>
+			<input type="button" id = "searchbutton" onclick ="checktype()" value = "Search" class="formchild" >
+		</div>
     <div class="grid-container">
       <div id = "l17" class="grid-itemr">17</div>
       <div id = "l16" class="grid-iteml">16</div>
